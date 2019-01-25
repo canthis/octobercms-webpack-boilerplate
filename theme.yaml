@@ -1,0 +1,5 @@
+name: 'October CMS Webpack Theme Boilerplate'
+description: 'Example theme for October CMS that includes Webpack (using Laravel Mix), Bootstrap, Font Awesome, jQuery and Autoprefixer'
+author: CanThis
+homepage: 'https://canthis.lv/'
+code: canthis-webpack-boilerplate

@@ -1,0 +1,32 @@
+[localePicker]
+forceUrl = 0
+==
+<?php
+function onInit()
+{
+    $themePath = 'themes/' . $this->theme->getDirName();
+    $this->layout['styles'] = url(mix('assets/css/styles.css', $themePath));
+    $this->layout['scripts'] = url(mix('assets/js/scripts.js', $themePath));
+}
+?>
+==
+<!DOCTYPE html>
+<html lang="{{ activeLocale ? activeLocale : 'en' }}">
+    <head>
+        {% partial 'site/meta' %}
+    </head>
+    <body class="page-{{ this.page.id }} {{ this.page.bodyClass }}">
+        <div id="js--webapp" class="container">
+
+            {% partial 'nav' %}
+
+            {% page %}
+
+            {% partial 'footer' %}
+
+        </div>
+
+        {# Scripts #}
+        {% partial 'site/scripts' %}
+    </body>
+</html>
