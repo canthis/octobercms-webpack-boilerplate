@@ -1,7 +1,6 @@
 let mix = require('laravel-mix');
 
 var url = 'sandbox.local';
-var theme = 'canthis-webpack-boilerplate';
 
 mix.options({
         processCssUrls: false,
